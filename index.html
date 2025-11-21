@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>PIG dice game</title>
+</head>
+<body>
+    <header>
+            <h1>PIG dice game</h1>
+    </header>
+    <main>
+        <section class="rules">
+           <h3>Game rules:</h3><br>
+           <p> 
+            1. Usually there are several players, but this game only have one player. The aim of the game is to reach 100 points by rolling a dice in as few rounds as possible.<br> 
+            2. On each round, the player may roll the dice as many times as the player wants. The round ends when the player chooses to freeze their points or when the player rolls a one.<br>  
+            3. Each time the dice are rolled, the dice number is added to the round's points. When you choose to freeze the points, the points of the round are added to the total points.<br> 
+            4. If, on the other hand, the player rolls a one, the round ends, and the round's points are zero. If you hit a one, the total point does not change.<br> 
+            5. When the player's total score reaches at least a hundred, the player wins. 
+            </p>
+            <p class="rules ex">Example: <br> In round 1, the player rolls 4, 6, 2 and 3 before choosing to freeze. The round's score is then 15 and the total score is 15.<br>
+            In round 2, the player rolls 6, 6 and 6 before choosing to freeze. The score of the round was 18 and the total score will be 15 + 18 = 33.<br>
+            In round 3, the player rolls 3, 5, 6, 6, 3, 4 and 1. The round then automatically ends, the round's score is 0 and the total score is still 33.<br>
+            The game continues until the total score is over 100.
+            </p>   
+        </section>
+        
+        <!-- Namninmatning -->
+        <div id="nameBox">
+            <h3>Enter your name to start the game.</h3>
+            <form>
+                <input type="text" id="nameInput" placeholder="Name">
+                <br><br>
+                <button id="startGame">Submit name</button>
+            </form>
+        </div>
+
+        <!-- Själva spelet (gömt tills spelet startar) -->
+        <div id="game">
+            <div id="scoreBoard">
+                <h2 id="playerName"></h2>
+                <p id="totalScore">Total Score:0</p>
+                <p id="roundScore">Round Score:0</p>
+                <p id="numRounds">Number of rounds played:0</p>
+        </div>
+
+        <div id="winner">
+            <h2 id="winnerText"></h2>
+        </div>
+   
+            <!-- Tärning -->
+             <h1 id="dice"></h1>
+
+            <!-- <section id="dice">
+                <div class="die one">
+                    <div></div>
+                </div>
+                <div class="die two">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="die three">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="die four">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="die five">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="die six">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> 
+            </section> -->
+
+        <div id="Btns">
+                <button id="roll">Roll dice!</button>
+                <button id="freeze">Freeze!</button> <br>
+                <button id="restart">Restart game</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        &copy; 2025 PIG dice game. All rights reserved. Created by emmaad.se
+    </footer>
+
+    <script src="./JS/script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: lightgray;
+    padding: 1rem;
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+.rules{
+    background: white;
+    padding: 10px;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.rules p{
+    line-height: 1.5rem;
+}
+.ex{
+    background: skyblue;
+    padding: 20px;
+    width: 85%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#nameBox{
+    background: white;
+    padding: 1rem;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#nameInput{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 60%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+#winner{
+    background: skyblue;
+    padding: 1rem;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+button {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    background: skyblue;
+    border-radius: 8px;
+}
+
+button:hover {
+    box-shadow: inset 0 0 0.5rem rgba(0,0,0,0.5);
+}
+
+#scoreBoard{
+    background: lightgray;
+    padding: 1rem;
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    bottom: 0;   
+    width: 100%;
+    margin-top: 5rem;
+    padding: 1rem;
+    background: lightgray;
+    font-size: 0.9rem;
+    border-top: 2px solid gray;
+}
+
+
+
+
+section{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+#dice{
+    padding: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.die{
+    padding: 1%;
+    width: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    border: 2px solid gray;
+    background: hsl(40, 30%, 98%);
+    display: flex;
+}
+
+/* dots */
+.die div{
+    background: black;
+    border-radius: 50%;
+    width: 25%;
+    aspect-ratio: 1/1;
+}
+
+/* one */
+.one{
+    justify-content: center;
+    align-items: center;
+}
+
+/* two */
+.two{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* three */
+.three{
+    justify-content: space-around;
+    align-items: center;
+}
+.three > :first-child{
+    align-self: flex-start;
+}
+.three > :last-child{
+    align-self: flex-end;
+}
+
+/* four */
+.four{
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-flow: row wrap;
+}
+.four > :first-child, .four > :nth-child(2){
+    align-self: flex-start;
+}
+.four > :first-child, .four > :nth-child(3){
+    margin-right: 50%;
+}
+
+/* five */
+.five{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+.five > :first-child, .five > :nth-child(4){
+    margin-right: 50%;
+}
+.five > :nth-child(3){
+    margin: 0 37.5%;
+    justify-self: center;
+    align-self: center;
+}
+.five > :last-child, .five > :nth-child(4){
+    align-self: flex-end;
+}
+
+/* six */
+.six{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+.six > :nth-child(2n+1){
+    margin-right: 50%;
+}
+.six > :nth-child(3), .six > :nth-child(4){
+    align-self: center;
+}
+.six > :nth-child(5), .six > :last-child{
+    align-self: flex-end;
+}
+

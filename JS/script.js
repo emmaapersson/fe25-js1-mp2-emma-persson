@@ -55,7 +55,7 @@ function rollDice(event){
         displayRScore.innerText = 'Round Score:'+ roundScore;
         displayNumRounds.innerText = 'Number of rounds played:' + numRounds;
     }
-    else if (totalScore >= 10){
+    else if (totalScore >= 100){
         document.getElementById('winner').style.display = 'block';
         winnerText.innerText = `Congratulations! You won the game and it took ${numRounds} rounds!`
 }
@@ -72,7 +72,7 @@ function freeze(event){
     displayNumRounds.innerText = 'Number of rounds played:' + numRounds;
     roundScore = 0;
 
-    if (totalScore >= 10){
+    if (totalScore >= 100){
         document.getElementById('winner').style.display = 'block';
         winnerText.innerText = `Congratulations! You won the game and it took ${numRounds} rounds!`
     }
